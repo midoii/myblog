@@ -1,5 +1,5 @@
 <template>
-  <div 
+  <div
     class="cover-upload-wrap"
     ref=coverOutWrap
     :style="{
@@ -11,7 +11,7 @@
     <el-upload
       ref="upload"
       class="cover-uploader"
-      action="http://up-z2.qiniu.com"
+      action="图片服务器地址/upload/image"
       :data="token"
       :show-file-list="false"
       :auto-upload="false"
@@ -27,7 +27,7 @@
         </div>
       </div>
     </el-upload>
-    <cropperBox 
+    <cropperBox
       ref="cropperBox"
       :options="options"
       :uploadProgress="uploadProgress"

@@ -14,7 +14,7 @@ import {
 } from 'STORE/mutation-types'
 
 /* eslint-disable */
-const API_ROOT = 'http://blogapi.codebear.cn/index.php'
+const API_ROOT = 'http://服务器地址/apex'
 const API_ROOT_DEV = '/localapi'
 
 /* eslint-enable */
@@ -81,7 +81,7 @@ export default {
    * 上传图片到七牛
    */
   uploadToQiniu (params) {
-    return axios.post('http://up-z2.qiniu.com', params, {
+    return axios.post('图片服务器地址', params, {
       headers: {
         'content-type': 'multipart/form-data'
       },
